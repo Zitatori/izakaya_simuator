@@ -4,6 +4,19 @@ A travel conversation simulator built with **Python (Streamlit)**.
 Practice Japanese conversation in local situations like an **izakaya** (Japanese pub),  
 with choices displayed in **Japanese (hiragana), English, and romaji**.
 
+
+## What you can practice
+
+This simulator helps you practice simple Japanese used in an izakaya:
+
+- saying how many people are in your group
+- ordering your first drink
+- calling the staff
+- ordering food and extra drinks
+- asking for the bill
+- choosing cash or card
+
+It is designed for learners who want to study practical travel Japanese in a visual, interactive way.
 ---
 
 ## 🚀 Demo
@@ -38,6 +51,15 @@ with choices displayed in **Japanese (hiragana), English, and romaji**.
 
 ## 🔧 Installation
 Clone this repo and install dependencies:
+
+
+## Run locally
+
+```bash
+git clone https://github.com/Zitatori/izakaya_simuator.git
+cd izakaya_simuator
+pip install -r requirements.txt
+streamlit run app.py
 
 ```bash
 git clone https://github.com/your-username/izakaya-sim.git
