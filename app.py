@@ -1,5 +1,5 @@
 # app.py — 居酒屋シミュレータ (Streamlit)
-# 必要ファイル (images/ フォルダ内に配置):
+# 要ファイル (images/ フォルダ内に配置):
 #   izakaya1.jpg (店内背景: fallback用にも必須)
 #   menu_izakaya.jpg (メニュー表)
 #   drink_lemon_sour.jpg / drink_otoko_ume.jpg / drink_sake.jpg
@@ -16,7 +16,7 @@ from dataclasses import dataclass, field
 from typing import Dict, List, Any, Optional
 import streamlit as st
 
-st.set_page_config(page_title="居酒屋シム", page_icon="🍶", layout="wide")
+st.set_page_config(page_title="居酒屋", page_icon="🍶", layout="wide")
 
 # ===== CSS =====
 st.markdown(
@@ -212,7 +212,7 @@ for i,c in enumerate(node.choices):
                 lst.append(v); st.session_state.slots[k]=lst
             if c.overlay:
                 st.session_state.overlay=c.overlay
-                st.session_state.overlay_until=time.time()+0.1  # 3秒表示
+                st.session_state.overlay_until=time.time()+3.0  # 3秒表示
             if c.bg: st.session_state.bg_path=c.bg
             if c.next=="__RESET__":
                 st.session_state.node_id="start"; st.session_state.slots=IZAKAYA.slots.copy()
